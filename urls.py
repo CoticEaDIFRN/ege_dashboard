@@ -33,7 +33,7 @@ urlpatterns = [
         include(
             [
                 path('logout/', jwt_logout, name='logout'),
-                path('', include('ege_perfil.urls')),
+                path('', include('ege_dashboard.urls')),
                 path('', include('ege_utils.urls', namespace='ege_utils')),
                 path('admin/', admin.site.urls),
             ]

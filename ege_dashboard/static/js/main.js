@@ -1,5 +1,5 @@
 const data = new Vue({
-    el: '#perfil',
+    el: '#dashboard',
     delimiters: ['${', '}'],
 
     data: {
