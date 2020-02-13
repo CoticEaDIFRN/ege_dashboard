@@ -12,7 +12,7 @@ urlpatterns = [
         include(
             [
                 path('logout/', jwt_logout, name='logout'),
-                path('', include('ege_dashboard.urls')),
+                path('', include('dashboard.urls')),
                 path('', include('suap_ead.urls', namespace='suap_ead')),
                 path('admin/', admin.site.urls),
             ]
